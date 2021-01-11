@@ -1,5 +1,7 @@
 using System.Collections.Generic;
 
+using Configuration.Extensions.InMemorySettings;
+
 using FluentAssertions;
 
 using Xunit;

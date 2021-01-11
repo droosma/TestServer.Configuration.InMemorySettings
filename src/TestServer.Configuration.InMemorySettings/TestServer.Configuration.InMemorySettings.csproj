@@ -7,6 +7,7 @@
     <PackageId>TestServer.Configuration.InMemorySettings</PackageId>
     <Version>1.0.0</Version>
     <Authors>Duncan Roosma</Authors>
+    <RootNamespace>Configuration.Extensions.InMemorySettings</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>

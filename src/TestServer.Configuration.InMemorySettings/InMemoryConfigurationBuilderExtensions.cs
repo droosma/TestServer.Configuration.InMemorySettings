@@ -2,7 +2,7 @@
 
 using Microsoft.Extensions.Configuration;
 
-namespace TestServer.Configuration.InMemorySettings
+namespace Configuration.Extensions.InMemorySettings
 {
     public static class InMemoryConfigurationBuilderExtensions 
     {

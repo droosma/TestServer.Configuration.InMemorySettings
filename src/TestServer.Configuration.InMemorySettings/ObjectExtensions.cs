@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 
-namespace TestServer.Configuration.InMemorySettings
+namespace Configuration.Extensions.InMemorySettings
 {
     internal static class ObjectExtensions
     {
