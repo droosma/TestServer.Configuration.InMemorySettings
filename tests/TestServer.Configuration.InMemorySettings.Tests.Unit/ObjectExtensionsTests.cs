@@ -8,7 +8,7 @@ using Xunit;
 
 namespace TestServer.Configuration.InMemorySettings.Tests.Unit
 {
-    public class UnitTest1
+    public class ObjectExtensionsTests
     {
         [Fact]
         public void AsInMemoryCollection_GivenClassWithEnumerableChild_GeneratesCorrectKeyValuePair()

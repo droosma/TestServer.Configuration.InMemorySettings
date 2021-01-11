@@ -52,7 +52,7 @@ namespace Configuration.Extensions.InMemorySettings
 
                 if (value is ICollection collection)
                 {
-                    return ExtractValuesFromCollection(collection, keyValue);
+                    return current.Concat(ExtractValuesFromCollection(collection, keyValue));
                 }
 
                 return value == null
