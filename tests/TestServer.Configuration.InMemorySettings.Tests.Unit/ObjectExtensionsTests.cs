@@ -14,7 +14,7 @@ namespace TestServer.Configuration.InMemorySettings.Tests.Unit
         public void AsInMemoryCollection_GivenClassWithEnumerableChild_GeneratesCorrectKeyValuePair()
         {
             const string itemValue = "valueOne";
-            var sut = new TestSettingWithCollection {Values = new List<string> {itemValue}};
+            var sut = new TestSettingWithCollection { Values = new List<string> { itemValue } };
 
             var result = sut.AsInMemoryCollection();
 
@@ -26,7 +26,7 @@ namespace TestServer.Configuration.InMemorySettings.Tests.Unit
         public void AsInMemoryCollection_GivenClassWithNestedChildren_GeneratesCorrectKeyValuePair()
         {
             const string settingValue = "setting-name";
-            var sut = new TestSettingWithNesting {NestedTestSetting = new TestSetting {Name = settingValue}};
+            var sut = new TestSettingWithNesting { NestedTestSetting = new TestSetting { Name = settingValue } };
 
             var result = sut.AsInMemoryCollection();
 
@@ -38,7 +38,7 @@ namespace TestServer.Configuration.InMemorySettings.Tests.Unit
         public void AsInMemoryCollection_GivenSimpleTypeChild_GeneratesCorrectKeyValuePair()
         {
             const string settingValue = "setting-name";
-            var sut = new TestSetting {Name = settingValue};
+            var sut = new TestSetting { Name = settingValue };
 
             var result = sut.AsInMemoryCollection();
 
