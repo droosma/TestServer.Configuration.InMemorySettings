@@ -60,6 +60,19 @@ TestServer testServer = new WebHostBuilder().UseEnvironment("Test")
                                             });
 ```
 
+### Collection Generated Hook
+
+For debugging purposes, it's possible to add `Action<IDictionary<string, string>>` to the AddSettings.
+
+``` CSharp
+collectionGenerated: dictionary => {
+                                       foreach(var s in dictionary.Select(pair => $"{pair.Key}:{pair.Value}"))
+                                       {
+                                           Console.WriteLine(s);
+                                       }
+                                   }
+```
+
 ## Disclamer
 
 The reflection I'm using to accomplish this conversion is quite naive and past experience has tought me that there are bugs in this code.
