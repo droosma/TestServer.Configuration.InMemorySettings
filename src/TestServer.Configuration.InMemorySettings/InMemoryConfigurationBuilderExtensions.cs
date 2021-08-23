@@ -4,7 +4,7 @@ using Microsoft.Extensions.Configuration;
 
 namespace Configuration.Extensions.InMemorySettings
 {
-    public static class InMemoryConfigurationBuilderExtensions 
+    public static class InMemoryConfigurationBuilderExtensions
     {
         public static IConfigurationBuilder AddSettings<T>(this IConfigurationBuilder configurationBuilder, T instance)
         {
